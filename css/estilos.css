@@ -1,0 +1,278 @@
+*{
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+}
+
+body{
+    background: #fff;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 16px;
+}
+.container{
+    margin: auto;
+    width: 90%;
+    max-width: 1000px;
+    overflow: hidden;
+
+}
+
+header{
+    background: url("../img/Fondo.png") rgba(255, 89, 238, .5);
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    max-height: 600px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+  
+}
+header .menu{
+    margin: 40px 0;
+    text-align: right;
+}
+header .menu a{
+    margin: 0 20px;
+    color: #fff;
+    padding-bottom: 9px;
+    font-size: 1em;
+    text-decoration: none;
+    display: inline-block;
+    border-bottom: 2px solid transparent;
+}
+header .menu a:hover{
+    border-bottom: 2px solid #fff;
+}
+
+header .text-container{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    margin: 190px 0;
+}
+header .text-container .text{
+    border: 2px solid rgba(255, 255, 255, .5);
+    border-radius: 3px;
+    display: inline-block;
+    text-align: center;
+    padding: 20px 60px;
+}
+header .text-container .text h1,
+header .text-container .text h2{
+    color: #fff;
+    font-weight: 300;
+    margin: 0;
+}
+header .text-container .text .name{
+    margin-bottom: 10px;
+    font-size: 50px;
+    line-height: 50px;
+    padding-bottom: 8px;
+    border-bottom: 1px solid #fff;
+}
+header .text-container .text .profesion{
+    font-size: 25px;
+    line-height: 25px;
+}
+
+/*-------------- MAIN ---------------*/
+.main .container{
+    overflow: visible;
+}
+.main .acerca-de{
+    text-align: center;
+}
+
+.main .acerca-de .photo{
+    margin-top: -80px;
+}
+.main .acerca-de .photo img{
+    width: 170px;
+   vertical-align: top;
+   border-radius: 50%;
+   border: 5px solid rgba(255, 255, 255, .2);
+}
+.main .acerca-de .text{
+    color: #5a5a5a;
+    font-weight: 600;
+    font-size: 1em;
+    line-height: 30px;
+    width: 80%;
+    margin: 40px auto 60px auto;
+}
+.main .acerca-de .text .titulo{
+    font-size: 34px;
+    line-height:34px;
+    margin-bottom: 40px;
+    font-weight: 300;
+    color: #8F00FF;
+    text-align: center;
+}
+.main .acerca-de .text .bold{
+    color: #3895EA;
+    text-decoration: underline;
+}
+.main .works{
+    background: #F2F2F2;
+    padding: 60px 0;
+}
+.main .works .container{
+    overflow: hidden;
+}
+.main .works .container .titulo{
+    font-size: 34px;
+    line-height:34px;
+    margin-bottom: 40px;
+    font-weight: 300;
+    color: #323068;
+    text-align: center;
+}
+.main .works .container .contenedor-trabajos{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.main .works .container .contenedor-trabajos .trabajo {
+    width: 30%;
+    margin-bottom: 40px;
+}
+.main .works .container .contenedor-trabajos .trabajo .thumb{
+    width: 100%;
+    margin-bottom: 10px;
+}
+.main .works .container .contenedor-trabajos .trabajo .thumb img{
+    width: 100%;
+    vertical-align: top;
+    border-radius: 3px;
+}
+.main .works .container .contenedor-trabajos .trabajo .description{
+    text-align: center;
+}
+.main .works .container .contenedor-trabajos .trabajo .description .name{
+    font-weight: 700;
+    color: #B85CFF;
+    margin-bottom: 10px;
+}
+.main .works .container .contenedor-trabajos .trabajo .description .category{
+    font-size: 14px;
+    color: #636363;
+}
+/*-------------- FOOTER ------------*/
+footer .contact{
+    padding: 60px 0;
+}
+footer .contact .titulo{
+    font-size: 34px;
+    line-height:34px;
+    margin-bottom: 40px;
+    font-weight: 300;
+    color: #B85CFF;
+    text-align: center;
+}
+
+footer .contact .form{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+footer .contact .form input[type="text"],
+footer .contact .form input[type="email"],
+footer .contact .form textarea{
+    border: 2px solid #cecece;
+    border-radius: 5px;
+    padding: 15px 20px;
+    font-size: 20px;
+    color: #a4a4a4;
+}
+
+footer .contact .form input[type="text"]:focus,
+footer .contact .form input[type="email"]:focus,
+footer .contact .form textarea:focus{
+    outline: none;
+    border: 1px solid #8F00FF;
+}
+
+footer .contact .form input[type="text"],
+footer .contact .form input[type="email"]{
+    width: 49%;
+    margin-bottom: 15px;
+}
+footer .contact .form textarea{
+    width: 100%;
+    height: 100px;
+    min-width: 100%;
+    max-width: 100%;
+    min-height: 100px;
+    max-height: 300px;
+    margin-bottom: 15px;
+}
+footer .contact .form .button{
+    margin: auto;
+    background: #B85CFF;
+    color: #fff;
+    padding: 15px 40px;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+}
+footer .contact .form .button:hover{
+    background: rgba(184,92,255, .8)
+}
+
+footer .social-media{
+    background: #2E1B7F;
+    padding: 60px 0;
+}
+footer .social-media .container{
+    display: flex;
+    justify-content: center;
+}
+footer .social-media a{
+    color: #fff;
+    text-align: center;
+    width: 100px;
+    display: block;
+    border-radius: 3px;
+    padding:15px 0;
+    font-size: 30px;
+    margin: 0 20px;
+}
+
+footer .social-media .facebook:hover{
+    background: #1877F2;
+}
+footer .social-media .github:hover{
+    background: #f5f5f5;
+    color: #000;
+}
+footer .social-media .twitter:hover{
+    background: #1DA1F2;
+}
+footer .social-media .instagram:hover{
+    background: rgb(88,81,219);
+    background: linear-gradient(90deg, rgba(88,81,219,1) 0%, rgba(193,53,132,1) 50%, rgba(252,175,69,1) 100%);
+}
+/*-------------- MEDIA QUERIES ---------------*/
+
+@media screen and (max-width:800px) {
+    header .menu{
+        text-align: center;
+    }
+    .main .works .container .contenedor-trabajos .trabajo{
+        width: 45%;
+    }
+}
+@media screen and (max-width:500px) {
+    header .container .text .name{
+        font-size: 35px;
+    }
+    header .container .text .profesion{
+        font-size: 18px;
+    }
+    footer .social-media .container {
+        flex-wrap: wrap;
+    }
+}
